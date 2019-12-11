@@ -14,7 +14,7 @@ export const initialState = {
 };
 
 // create reducer using switch
-// each case is an action
+// each case is a different action type that is dispatched
 export const reducer = (state, action) => {
     switch(action.type) {
         case 'ADD_TODO':
