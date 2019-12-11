@@ -1,9 +1,16 @@
 import React from 'react';
 
-export function Item() {
-    const []
+export function ToDoItem(props) {
+    
     return (
-        <div className
-        <h4>ToDo Item</h4>
+        <div>
+            <h2>ToDo Item</h2>
+            <h4 className={props.item.completed ? 'complete' : ''}
+                onClick={(e) => {
+                    e.preventDefault()
+                    props.handleComplete(props.item.id)
+                }} > {props.item.todo} </h4>
+        </div>
+        
     );
 };
